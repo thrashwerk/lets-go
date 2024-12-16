@@ -1,9 +1,9 @@
 # Let's Go! by Alex Edwards
-https://lets-go.alexedwards.net/
-Can be downloaded from gumroad.com
+https://lets-go.alexedwards.net/  
+Can be downloaded from gumroad.com  
 
-Book version: 2.23.1
-Go version: 1.23
+Book version: 2.23.1  
+Go version: 1.23  
 
 ### Chapters:
 01. Introduction                     - 🟡  
