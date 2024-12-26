@@ -9,7 +9,7 @@ Last page: 69
 
 ### Chapters:
 01. Introduction                     - ☑  
-02. Foundations                      - ☐  
+02. Foundations                      - ☑  
 03. Configuration and error handling - ☐  
 04. Database-driven responses        - ☐  
 05. Dynamic HTML templates           - ☐  
