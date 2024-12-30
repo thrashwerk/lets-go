@@ -11,7 +11,7 @@ Last page: 136
 01. Introduction                     - ☑  
 02. Foundations                      - ☑  
 03. Configuration and error handling - ☑  
-04. Database-driven responses        - ☐  
+04. Database-driven responses        - ☑  
 05. Dynamic HTML templates           - ☐  
 06. Middleware                       - ☐  
 07. Processing forms                 - ☐  
