@@ -12,7 +12,7 @@ Last page: 136
 02. Foundations                      - ☑  
 03. Configuration and error handling - ☑  
 04. Database-driven responses        - ☑  
-05. Dynamic HTML templates           - ☐  
+05. Dynamic HTML templates           - ☑  
 06. Middleware                       - ☐  
 07. Processing forms                 - ☐  
 08. Stateful HTTP                    - ☐  
