@@ -25,8 +25,8 @@ func main() {
 	flag.Parse()
 
 	logger := slog.New(slog.NewTextHandler(os.Stdout, &slog.HandlerOptions{
-		AddSource: true,
-		Level:     slog.LevelInfo,
+		//AddSource: true,
+		Level: slog.LevelInfo,
 	}))
 
 	db, err := openDB(*dsn)
