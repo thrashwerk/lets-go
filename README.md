@@ -5,7 +5,7 @@ Can be downloaded from gumroad.com
 Book version: 2.23.1  
 Go version: 1.23  
 
-Last page: 174  
+Last page: 193  
 
 ### Chapters:
 01. Introduction                     - ☑  
