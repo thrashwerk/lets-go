@@ -14,7 +14,7 @@ Last page: 208
 04. Database-driven responses        - ☑  
 05. Dynamic HTML templates           - ☑  
 06. Middleware                       - ☑  
-07. Processing forms                 - ☐  
+07. Processing forms                 - ☑  
 08. Stateful HTTP                    - ☐  
 09. Server and security improvements - ☐  
 10. User authentication              - ☐  
