@@ -1,5 +1,18 @@
 ### Running MySQL in a container instead of the host
 
+##### Connecting to the database
+```bash
+# from the host
+mysql -u root -p -h 127.0.0.1
+
+mysql -u web -p -h 127.0.0.1 -D snippetbox
+
+# from the container
+podman exec -it snippetbox-mysql mysql -u root -p
+
+podman exec -it snippetbox-mysql mysql -u web -p
+```
+
 ##### Setting up the container
 ```bash
 podman volume create snippetbox-mysql-data
@@ -54,15 +67,15 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON snippetbox.* TO 'web'@'127.0.0.1';
 ALTER USER 'web'@'127.0.0.1' IDENTIFIED BY 'pasas456';
 ```
 
-##### Connecting to the database
-```bash
-# from the host
-mysql -u root -p -h 127.0.0.1
+##### Setup for stateful sessions
+```sql
+USE snippetbox;
 
-mysql -u web -p -h 127.0.0.1 -D snippetbox
+CREATE TABLE sessions (
+    token CHAR(43) PRIMARY KEY,
+    data BLOB NOT NULL,
+    expiry TIMESTAMP(6) NOT NULL
+);
 
-# from the container
-podman exec -it snippetbox-mysql mysql -u root -p
-
-podman exec -it snippetbox-mysql mysql -u web -p
+CREATE INDEX sessions_expiry_idx ON sessions (expiry);
 ```
