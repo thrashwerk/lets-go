@@ -15,7 +15,7 @@ Last page: 246
 05. Dynamic HTML templates           - ☑  
 06. Middleware                       - ☑  
 07. Processing forms                 - ☑  
-08. Stateful HTTP                    - ☐  
+08. Stateful HTTP                    - ☑  
 09. Server and security improvements - ☐  
 10. User authentication              - ☐  
 11. Using request context            - ☐  
