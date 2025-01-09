@@ -111,28 +111,28 @@ func (app *application) userSignup(w http.ResponseWriter, r *http.Request) {
 }
 
 func (app *application) userSignupPost(w http.ResponseWriter, r *http.Request) {
+	var form userSignupForm
+
+	err := app.decodePostForm(r, &form)
+	if err != nil {
+		app.clientError(w, http.StatusBadRequest)
+		return
+	}
+
+	form.CheckField(validator.NotBlank(form.Name), "name", "This field cannot be blank")
+	form.CheckField(validator.NotBlank(form.Email), "email", "This field cannot be blank")
+	form.CheckField(validator.Matches(form.Email, validator.EmailRX), "email", "This field must be a valid email address")
+	form.CheckField(validator.NotBlank(form.Password), "password", "This field cannot be blank")
+	form.CheckField(validator.MinChars(form.Password, 8), "password", "This field must be at least 8 characters long")
+
+	if !form.Valid() {
+		data := app.newTemplateData(r)
+		data.Form = form
+		app.render(w, r, http.StatusUnprocessableEntity, "signup.tmpl.html", data)
+		return
+	}
+
 	fmt.Fprintln(w, "Create a new user...")
-	// var form userSignupForm
-
-	// err := app.decodePostForm(r, &form)
-	// if err != nil {
-	// 	app.clientError(w, http.StatusBadRequest)
-	// 	return
-	// }
-
-	// form.CheckField(validator.NotBlank(form.Name), "name", "This field cannot be blank")
-	// form.CheckField(validator.MaxChars(form.Name, 30), "name", "This field cannot be more than 30 characters long")
-	// form.CheckField(validator.NotBlank(form.Email), "email", "This field cannot be blank")
-	// form.CheckField(validator.MaxChars(form.Email, 30), "email", "This field cannot be more than 30 characters long")
-	// form.CheckField(validator.NotBlank(form.Password), "password", "This field cannot be blank")
-	// form.CheckField(validator.MaxChars(form.Password, 100), "name", "This field cannot be more than 100 characters long")
-
-	// if !form.Valid() {
-	// 	data := app.newTemplateData(r)
-	// 	data.Form = form
-	// 	app.render(w, r, http.StatusUnprocessableEntity, "signup.tmpl.html", data)
-	// 	return
-	// }
 
 	// app.sessionManager.Put(r.Context(), "flash", "Account successfully created!")
 
