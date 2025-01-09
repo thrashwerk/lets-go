@@ -97,18 +97,74 @@ func (app *application) snippetCreatePost(w http.ResponseWriter, r *http.Request
 
 func (app *application) userSignup(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintln(w, "Display a form for signing up a new user...")
+	// data := app.newTemplateData(r)
+
+	// data.Form = userSignupForm{}
+
+	// app.render(w, r, http.StatusOK, "signup.tmpl.html", data)
 }
 
 func (app *application) userSignupPost(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintln(w, "Create a new user...")
+	// var form userSignupForm
+
+	// err := app.decodePostForm(r, &form)
+	// if err != nil {
+	// 	app.clientError(w, http.StatusBadRequest)
+	// 	return
+	// }
+
+	// form.CheckField(validator.NotBlank(form.Name), "name", "This field cannot be blank")
+	// form.CheckField(validator.MaxChars(form.Name, 30), "name", "This field cannot be more than 30 characters long")
+	// form.CheckField(validator.NotBlank(form.Email), "email", "This field cannot be blank")
+	// form.CheckField(validator.MaxChars(form.Email, 30), "email", "This field cannot be more than 30 characters long")
+	// form.CheckField(validator.NotBlank(form.Password), "password", "This field cannot be blank")
+	// form.CheckField(validator.MaxChars(form.Password, 100), "name", "This field cannot be more than 100 characters long")
+
+	// if !form.Valid() {
+	// 	data := app.newTemplateData(r)
+	// 	data.Form = form
+	// 	app.render(w, r, http.StatusUnprocessableEntity, "signup.tmpl.html", data)
+	// 	return
+	// }
+
+	// app.sessionManager.Put(r.Context(), "flash", "Account successfully created!")
+
+	// http.Redirect(w, r, fmt.Sprintf("SOMETHING"), http.StatusSeeOther)
 }
 
 func (app *application) userLogin(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintln(w, "Display a form for logging in a user...")
+	// data := app.newTemplateData(r)
+
+	// data.Form = userLoginForm{}
+
+	// app.render(w, r, http.StatusOK, "login.tmpl.html", data)
 }
 
 func (app *application) userLoginPost(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintln(w, "Authenticate and login the user...")
+	// var form userLoginForm
+
+	// err := app.decodePostForm(r, &form)
+	// if err != nil {
+	// 	app.clientError(w, http.StatusBadRequest)
+	// 	return
+	// }
+
+	// form.CheckField(validator.NotBlank(form.Email), "email", "This field cannot be blank")
+	// form.CheckField(validator.NotBlank(form.Password), "password", "This field cannot be blank")
+
+	// if !form.Valid() {
+	// 	data := app.newTemplateData(r)
+	// 	data.Form = form
+	// 	app.render(w, r, http.StatusUnprocessableEntity, "login.tmpl.html", data)
+	// 	return
+	// }
+
+	// app.sessionManager.Put(r.Context(), "SOMETHING", "SOMETHING")
+
+	// http.Redirect(w, r, fmt.Sprintf("SOMETHING"), http.StatusSeeOther) // redirect to home?
 }
 
 func (app *application) userLogoutPost(w http.ResponseWriter, r *http.Request) {
