@@ -18,7 +18,7 @@ Last page: 333
 08. Stateful HTTP                    - ☑  
 09. Server and security improvements - ☑  
 10. User authentication              - ☑  
-11. Using request context            - ☐  
+11. Using request context            - ☑  
 12. File embedding                   - ☐  
 13. Testing                          - ☐  
 14. Conclusion                       - ☐  
