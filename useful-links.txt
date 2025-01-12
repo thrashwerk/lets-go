@@ -48,3 +48,6 @@ https://www.gnucitizen.org/blog/csrf-demystified/
 
 MySQL 8.0 Error Message Reference
 https://dev.mysql.com/doc/mysql-errors/8.0/en/
+
+CSS Preprocessors - Sass vs Less
+https://www.keycdn.com/blog/sass-vs-less
