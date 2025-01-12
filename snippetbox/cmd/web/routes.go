@@ -3,14 +3,15 @@ package main
 import (
 	"net/http"
 
+	"github.com/thrashwerk/lets-go/snippetbox/ui"
+
 	"github.com/justinas/alice"
 )
 
 func (app *application) routes() http.Handler {
 	mux := http.NewServeMux()
 
-	fileServer := http.FileServer(http.Dir("./ui/static/"))
-	mux.Handle("GET /static/", http.StripPrefix("/static", fileServer))
+	mux.Handle("GET /static/", http.FileServerFS(ui.Files))
 
 	// no auth
 	dynamic := alice.New(app.sessionManager.LoadAndSave, noSurf, app.authenticate)
