@@ -1,3 +1,32 @@
+Which Go router should I use? (with flowchart)
+https://www.alexedwards.net/blog/which-go-router-should-i-use
+
+Organizing a Go module - Server project
+https://go.dev/doc/modules/layout#server-project
+
+How to Disable FileServer Directory Listings
+https://www.alexedwards.net/blog/disable-http-fileserver-directory-listings
+
+Organising Database Access in Go
+https://www.alexedwards.net/blog/organising-database-access
+
+https://gist.github.com/alexedwards/5cd712192b4831058b21
+
+Separation of Concerns
+https://deviq.com/principles/separation-of-concerns
+
+Embedding in Go: Part 1 - structs in structs
+https://eli.thegreenplace.net/2020/embedding-in-go-part-1-structs-in-structs/
+
+Tutorial: Getting started with generics
+https://go.dev/doc/tutorial/generics
+
+GopherCon 2021: Generics! - Robert Griesemer & Ian Lance Taylor
+https://www.youtube.com/watch?v=Pa_e9EeCdy8
+
+Renew the Session ID After Any Privilege Level Change
+https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#renew-the-session-id-after-any-privilege-level-change
+
 Life of an HTTP request in a Go server
 https://eli.thegreenplace.net/2021/life-of-an-http-request-in-a-go-server/
 
