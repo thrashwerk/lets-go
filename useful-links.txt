@@ -10,6 +10,7 @@ https://www.alexedwards.net/blog/disable-http-fileserver-directory-listings
 Organising Database Access in Go
 https://www.alexedwards.net/blog/organising-database-access
 
+Using a closure to pass dependencies to handlers
 https://gist.github.com/alexedwards/5cd712192b4831058b21
 
 Separation of Concerns
