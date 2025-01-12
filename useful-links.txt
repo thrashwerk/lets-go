@@ -1,0 +1,20 @@
+Life of an HTTP request in a Go server
+https://eli.thegreenplace.net/2021/life-of-an-http-request-in-a-go-server/
+
+Content Security Policy (CSP)
+https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
+
+Validation Snippets for Go
+https://www.alexedwards.net/blog/validation-snippets-for-go
+
+HTTP/2 and http2 in Go 1.6
+https://www.youtube.com/watch?v=FARQMJndUn0
+
+Cross-Site Request Forgery Prevention Cheat Sheet
+https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html
+
+CSRF Demystified
+https://www.gnucitizen.org/blog/csrf-demystified/
+
+MySQL 8.0 Error Message Reference
+https://dev.mysql.com/doc/mysql-errors/8.0/en/
