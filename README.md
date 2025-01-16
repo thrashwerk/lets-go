@@ -20,6 +20,6 @@ Last page: 387
 10. User authentication              - ☑  
 11. Using request context            - ☑  
 12. File embedding                   - ☑  
-13. Testing                          - ☐  
+13. Testing                          - ☑  
 14. Conclusion                       - ☐  
 15. Further reading and useful links - ☐  
