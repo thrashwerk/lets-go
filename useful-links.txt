@@ -51,3 +51,63 @@ https://dev.mysql.com/doc/mysql-errors/8.0/en/
 
 CSS Preprocessors - Sass vs Less
 https://www.keycdn.com/blog/sass-vs-less
+
+
+Effective Go
+https://go.dev/doc/effective_go
+
+Practical Go: Real world advice for writing maintainable Go programs
+https://dave.cheney.net/practical-go/presentations/qcon-china.html
+
+Go Wiki: Go Code Review Comments
+https://go.dev/wiki/CodeReviewComments
+
+Clear is better than clever
+https://www.youtube.com/watch?v=NwEuRO_w8HE
+
+What's in a name?
+https://go.dev/talks/2014/names.slide#1
+
+Go Proverbs
+https://go-proverbs.github.io/
+
+
+Don't fear the pointer
+https://bitfieldconsulting.com/posts/pointers
+
+Golang Interfaces Explained
+https://www.alexedwards.net/blog/interfaces-explained
+
+Data Races vs Race Conditions
+https://cronokirby.github.io/posts/data-races-vs-race-conditions
+
+Understanding Mutexes
+https://www.alexedwards.net/blog/understanding-mutexes
+
+Go Wiki: Go Modules
+https://go.dev/wiki/Modules
+
+Go Wiki: Error Values: Frequently Asked Questions
+https://go.dev/wiki/ErrorValueFAQ
+
+An Overview of Go's Tooling
+https://www.alexedwards.net/blog/an-overview-of-go-tooling
+
+A Step-by-Step Guide to Go Internationalization
+https://phrase.com/blog/posts/internationalization-i18n-go/
+
+Learning Go’s Concurrency Through Illustrations
+https://medium.com/@trevor4e/learning-gos-concurrency-through-illustrations-8c4aff603b3
+
+How to write benchmarks in Go
+https://dave.cheney.net/2013/06/30/how-to-write-benchmarks-in-go
+
+Traps gotchas and common mistakes for new golang devs
+https://web.archive.org/web/20240601000000*/http://devs.cloudimmunity.com/gotchas-and-common-mistakes-in-go-golang/
+
+
+Awesome Go
+https://github.com/avelino/awesome-go
+
+Go Wiki: Projects
+https://go.dev/wiki/Projects
