@@ -22,4 +22,4 @@ Last page: 387
 12. File embedding                   - ☑  
 13. Testing                          - ☑  
 14. Conclusion                       - ☑  
-15. Further reading and useful links - ☐  
+15. Further reading and useful links - ☑  
